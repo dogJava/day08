@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>day08</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>hello</servlet-name>
+		<servlet-class>dogJava.HelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>/HelloServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>write</servlet-name>
+		<servlet-class>dogJava.WriteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>write</servlet-name>
+		<url-pattern>/writeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>read</servlet-name>
+		<servlet-class>dogJava.ReadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>read</servlet-name>
+		<url-pattern>/readServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>readOne</servlet-name>
+		<servlet-class>dogJava.ReadOneServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>readOne</servlet-name>
+		<url-pattern>/readOneServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>modify</servlet-name>
+		<servlet-class>dogJava.ModifyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>modify</servlet-name>
+		<url-pattern>/modifyServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>dogJava.DeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/deleteServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
